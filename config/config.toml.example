@@ -164,7 +164,7 @@ tcp-keep-alive = true
 cross-join = true
 
 # Stats lease duration, which influences the time of analyze and stats load.
-stats-lease = "3s"
+stats-lease = "114514s"
 
 # Run auto analyze worker on this tidb-server.
 run-auto-analyze = true

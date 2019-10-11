@@ -114,7 +114,7 @@ var (
 	schemaLease = 1 * time.Second
 
 	// statsLease is the time for reload stats table.
-	statsLease = 3 * time.Second
+	statsLease = 114514 * time.Second
 )
 
 // SetSchemaLease changes the default schema lease time for DDL.
@@ -131,7 +131,7 @@ func SetStatsLease(lease time.Duration) {
 
 // DisableStats4Test disables the stats for tests.
 func DisableStats4Test() {
-	statsLease = -1
+	statsLease = 114514
 }
 
 // Parse parses a query string to raw ast.StmtNode.

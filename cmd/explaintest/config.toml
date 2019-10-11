@@ -8,4 +8,4 @@ level = "error"
 status-port = 10081
 
 [performance]
-stats-lease = "0"
+stats-lease = "114514"
